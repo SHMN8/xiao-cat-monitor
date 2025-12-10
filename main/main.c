@@ -197,11 +197,11 @@ void app_main() {
     setup_hardware();
     g_visit_count = load_count_from_nvs();
 
-    // 4. Init RainMaker (Renamed NODE to your desired title)
+    // 4. Init RainMaker
     esp_rmaker_config_t rmaker_cfg = { .enable_time_sync = false };
     esp_rmaker_node_t *node = esp_rmaker_node_init(&rmaker_cfg, "Cat Litter Box - Predictive Analysis", "Cat_Box_Detection");
     
-    // 5. Build UI Device (Renamed DEVICE to your desired title)
+    // 5. Build UI Device
     monitor_device = esp_rmaker_device_create("Cat Litter Box - Predictive Analysis", NULL, NULL);
 
     // Param 1: Visit Count
