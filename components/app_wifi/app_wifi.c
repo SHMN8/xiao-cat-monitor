@@ -41,8 +41,6 @@ static void get_device_service_name(char *service_name, size_t max)
 
 void app_wifi_start(void *ctx)
 {
-    // FIX: Do not call esp_netif_init() or esp_wifi_init() here.
-    // They are now handled in app_main() to ensure correct order.
     
     wifi_event_group = xEventGroupCreate();
     
