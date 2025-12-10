@@ -1,5 +1,0 @@
-dependencies:
-  espressif/esp_rainmaker:
-    version: "*"
-    rules:
-      - if: "idf_version >= 5.0"
